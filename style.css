@@ -1,90 +1,85 @@
-/* apply default styles to all elements */
-* {
-  box-sizing: border-box;
+body {
+  background-image: url("https://images.unsplash.com/photo-1573787527645-a5f1e0138f8a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
 }
 
-/* apply styles to the body element */
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  font-size: 36px;
+  color: #333;
+}
+
+h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+p {
+  font-size: 18px;
   line-height: 1.5;
   color: #333;
 }
 
-/* apply styles to the header element */
-header {
-  height: 70vh;
-  background-image: url("https://images.unsplash.com/photo-1589022097118-c4277a9f9f28?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZWNob3JpemF0aW9ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  font-size: 5rem;
-  font-family: sans-serif;
-}
-
-/* apply styles to the navigation bar */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #333;
-  color: white;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav ul li {
-  margin-left: 20px;
-}
-
-nav ul li a {
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
   text-decoration: none;
-  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
-/* apply styles to the main content */
-main {
-  padding: 20px;
+.btn:hover {
+  background-color: #0056b3;
 }
 
-/* apply styles to the footer */
-footer {
-  padding: 20px;
-  background-color: #333;
-  color: white;
-  text-align: center;
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* apply styles to the QR code scanner */
-#qr-scanner {
+.form label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.form input[type="text"], .form input[type="email"], .form input[type="tel"], .form input[type="password"] {
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
   width: 100%;
-  max-width: 500px;
-  margin: 20px auto;
 }
 
-/* apply styles to the wallet */
-#wallet {
-  width: 100%;
-  max-width: 500px;
-  margin: 20px auto;
-  background-color: #eee;
-  padding: 20px;
+.form button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
 }
 
-/* apply styles to the profile section */
-#profile {
-  width: 100%;
-  max-width: 500px;
-  margin: 20px auto;
-  background-color: #eee;
-  padding: 20px;
+.form button[type="submit"]:hover {
+  background-color: #0056b3;
 }
