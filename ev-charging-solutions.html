@@ -1,35 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>EV Charging Solutions</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EV Charging Solutions</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<header>
-		<h1>EV Charging Solutions</h1>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<h2>Welcome to EV Charging Solutions</h2>
-		<p>Our mission is to provide sustainable and reliable EV charging solutions for everyone.</p>
-		<div id="qr-scanner">
-			<!-- Add QR code scanner code here -->
-		</div>
-		<div id="wallet">
-			<!-- Add wallet feature code here -->
-		</div>
-		<div id="profile">
-			<!-- Add profile tab code here -->
-		</div>
-	</main>
-	<footer>
-		<p>&copy; 2023 EV Charging Solutions</p>
-	</footer>
+  <header>
+    <h1>EV Charging Solutions</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="qr-scanner">
+      <h2>Scan QR Code</h2>
+      <div class="qr-wrapper">
+        <!-- QR code scanner code will go here -->
+      </div>
+    </section>
+    <section id="wallet">
+      <h2>Wallet</h2>
+      <div class="balance">Your balance: <span>$0.00</span></div>
+      <div class="add-funds">
+        <label for="amount">Amount:</label>
+        <input type="number" name="amount" id="amount">
+        <button>Add Funds</button>
+      </div>
+    </section>
+    <section id="profile">
+      <h2>Profile</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone">
+        <button>Save</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 EV Charging Solutions</p>
+  </footer>
 </body>
 </html>
