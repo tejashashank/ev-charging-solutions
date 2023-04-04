@@ -1,90 +1,90 @@
-/* Body Styles */
-body {
-  font-family: Arial, sans-serif;
+/* apply default styles to all elements */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #F5F5F5;
 }
 
-/* Header Styles */
+/* apply styles to the body element */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* apply styles to the header element */
 header {
-  background-color: #202020;
-  color: #FFFFFF;
-  padding: 10px;
+  height: 70vh;
+  background-image: url("https://images.unsplash.com/photo-1589022097118-c4277a9f9f28?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZWNob3JpemF0aW9ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  color: white;
+  font-size: 5rem;
+  font-family: sans-serif;
 }
 
-/* Navigation Styles */
+/* apply styles to the navigation bar */
 nav {
-  background-color: #404040;
-  color: #FFFFFF;
-  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
 }
 
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  list-style: none;
   display: flex;
-  justify-content: space-between;
 }
 
 nav ul li {
-  margin: 0 10px;
+  margin-left: 20px;
 }
 
 nav ul li a {
-  color: #FFFFFF;
   text-decoration: none;
+  color: white;
 }
 
-/* Main Content Styles */
+/* apply styles to the main content */
 main {
-  display: flex;
-  justify-content: space-between;
   padding: 20px;
 }
 
-#qr-scanner, #wallet, #profile {
-  background-color: #FFFFFF;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px #888888;
-  flex-basis: 30%;
-  padding: 20px;
-}
-
-#qr-scanner h2, #wallet h2, #profile h2 {
-  text-align: center;
-}
-
-#qr-scanner img {
-  width: 100%;
-}
-
-#profile form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-#profile input[type="text"], #profile input[type="email"], #profile select {
-  padding: 5px;
-  border-radius: 3px;
-  border: 1px solid #CCCCCC;
-}
-
-#profile input[type="submit"] {
-  background-color: #202020;
-  color: #FFFFFF;
-  padding: 5px;
-  border: none;
-  border-radius: 3px;
-}
-
-/* Footer Styles */
+/* apply styles to the footer */
 footer {
-  background-color: #202020;
-  color: #FFFFFF;
-  padding: 10px;
+  padding: 20px;
+  background-color: #333;
+  color: white;
   text-align: center;
+}
+
+/* apply styles to the QR code scanner */
+#qr-scanner {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+/* apply styles to the wallet */
+#wallet {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #eee;
+  padding: 20px;
+}
+
+/* apply styles to the profile section */
+#profile {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #eee;
+  padding: 20px;
 }
